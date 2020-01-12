@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Exposing services externally on bare metal kubernetes
+date: 2020-1-12 12:00:45
 tags: [frontpage]
 categories: [kubernetes]
 ---
@@ -100,7 +101,7 @@ cluster to do it's magic. You can give metallb a pool of virtual IP addresses
 that are routable to the cluster to handout and it takes care of assigning these
 IP addresses to the `LoadBalancer` type services.
 
-You can read more about installing and configuring metallb in the next post.
+You can read more about installing and configuring metallb in the [this post]({% post_url 2020-1-12-metallb-layer2-mode %}).
 
 **4. Ingress Controllers**
 
