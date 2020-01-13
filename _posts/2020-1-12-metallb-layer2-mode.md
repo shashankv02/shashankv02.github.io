@@ -67,17 +67,21 @@ service's pods. So there is failover between nodes but there is no node level
 loadbalancing. So the service's ingress bandwidth is limited to the bandwidth of
 single node.
 
+**What virtual IPs should I use?**
+
+In Layer 2 mode, the virtual IPs that you give to metallb should be routable to the cluster
+network. This means all the nodes IPs and the extra virtual IPs should be in same
+subnet.
+
 **How many virtual IPs do I need?**
 
-The virtual IPs that you give to metallb should be routable to the cluster
-network. This means all the nodes IPs and the extra virtual IPs should be in same
-subnet. If you are running inside a private network, it should be easy to get as
+If you are running inside a private network, it should be easy to get as
 many IP addresses as you want. At minimum you would need as many IPs as the
 number of `LoadBalancer` services you have so that each service get's it's own IP.
 
 **Sharing IPs among different services**
 
-If for some reason, you do not have the luxary of getting the reuired number of
+If for some reason, you do not have the luxury of getting the reuired number of
 IPs or if you want to expose all the services on same IP, metallb supports IP
 sharing mode where multiple services can use same IP given that they use
 different service ports. To enable IP sharing, you need add an annotation with
