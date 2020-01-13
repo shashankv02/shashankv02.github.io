@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running metallb in Layer2 mode
+title: Running metallb in Layer 2 mode
 date: 2020-1-12 13:00:45
 tags: [frontpage]
 categories: [kubernetes]
