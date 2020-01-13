@@ -69,8 +69,8 @@ single node.
 
 **How many virtual IPs do I need?**
 
-The virtual IPs that you give to metallb should be routbale to the cluster
-nodes. This means all the nodes IPs and the extra virtual IPs should be in same
+The virtual IPs that you give to metallb should be routable to the cluster
+network. This means all the nodes IPs and the extra virtual IPs should be in same
 subnet. If you are running inside a private network, it should be easy to get as
 many IP addresses as you want. At minimum you would need as many IPs as the
 number of `LoadBalancer` services you have so that each service get's it's own IP.
