@@ -87,3 +87,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+allowedcats:
+  - kubernetes
