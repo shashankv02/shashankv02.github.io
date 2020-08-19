@@ -1,0 +1,2 @@
+build:
+	jekyll serve

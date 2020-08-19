@@ -6,7 +6,9 @@ layout: default
   {% for post in site.posts %} {% if post.tags contains "frontpage" %}
   <article class="post">
     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
+    {% if post.img %}
+      <img src="{{ site.baseurl }}/images/{{ post.img }}">
+    {% endif %}
     <div class="entry">
       {{ post.excerpt }}
     </div>
