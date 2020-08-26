@@ -4,10 +4,10 @@ title: Waiting for printer to be available..
 date: 2020-8-28 21:36:00
 tags: [frontpage]
 categories: [electronics]
-img: pi-printerusb-disconnect.png
+img: pi-printer/usb-disconnect.png
 ---
 
-[My wireless printer]({% post_url 2020-8-18-print-server-on-raspberry-pi-zero %}) worked fine for 10 days and then stopped working. 
+My [USB/wireless printer]({% post_url 2020-8-18-print-server-on-raspberry-pi-zero %}) worked fine for 10 days and then stopped working. 
 Print jobs are queued but are not printed and even CUPS doesn't detect the printer anymore. After looking at the logs at `/var/log/messages`,
 it appears that the printer was constantly getting disconnected.
 
