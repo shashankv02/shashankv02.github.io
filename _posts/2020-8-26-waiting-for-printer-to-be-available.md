@@ -31,4 +31,4 @@ printer HP_LaserJet_1020 now printing HP_LaserJet_1020-59.  enabled since Wed 26
 pi@raspberrypi:~ $ lpadmin -p HP_LaserJet_1020 -o usb-unidir-default=true
 ```
 
-Found these from the following thread - https://bugzilla.redhat.com/show_bug.cgi?id=873123
+Found these commands from the following thread - [https://bugzilla.redhat.com/show_bug.cgi?id=873123](https://bugzilla.redhat.com/show_bug.cgi?id=873123)
