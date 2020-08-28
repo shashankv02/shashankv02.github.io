@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Waiting for printer to be available..
+title: Waiting for printer to become available..
 date: 2020-8-28 21:36:00
 tags: [frontpage]
 categories: [electronics]
@@ -19,7 +19,7 @@ Aug 26 23:38:42 raspberrypi kernel: [  189.214852] usblp 1-1:1.0: usblp0: USB Bi
 Aug 26 23:38:43 raspberrypi kernel: [  189.795780] usblp0: removed
 ```
 
-I don't know why and how, but the following two commands fixed the problem.
+I don't know why and how, but the following two commands fixed the problem. Turn the printer on and off after running these commands. 
 
 ```
 ## lpstat -p
@@ -30,5 +30,6 @@ printer HP_LaserJet_1020 now printing HP_LaserJet_1020-59.  enabled since Wed 26
         Waiting for printer to become available.
 pi@raspberrypi:~ $ lpadmin -p HP_LaserJet_1020 -o usb-unidir-default=true
 ```
+
 
 Found these commands from the following thread - [https://bugzilla.redhat.com/show_bug.cgi?id=873123](https://bugzilla.redhat.com/show_bug.cgi?id=873123)
