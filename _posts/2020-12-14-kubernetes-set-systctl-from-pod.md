@@ -84,7 +84,7 @@ vm.max_map_count = 65540
 
 
 === Check on host ===
-=== namespaced sysctl not changed on host ===
+=== namespaced sysctl is NOT changed on host ===
 # sysctl net.ipv4.tcp_keepalive_intvl
 net.ipv4.tcp_keepalive_intvl = 75
 
