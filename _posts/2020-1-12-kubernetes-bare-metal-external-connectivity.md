@@ -18,7 +18,7 @@ it.
 **1. NodePort service**
 
 NodePort type service exposes the service on each node’s IP at a static port.
-You’ll be able to contact the NodePort Service, from outside the cluster at`<NodeIP>:<NodePort>`. 
+You’ll be able to contact the NodePort Service, from outside the cluster at `<NodeIP>:<NodePort>`. 
 You can use any NodeIP in the cluster. NodePort is reserved on all the nodes.
 
 Using a NodePort service as simple of setting `spec.type` as `NodePort` You can
